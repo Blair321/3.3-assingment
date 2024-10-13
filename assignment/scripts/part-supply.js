@@ -45,7 +45,6 @@ console.log('6. Looping through supplyChanges to populate arrays with positive, 
 let positive = []
 let negatives = []
 let zeroes = []
-
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
