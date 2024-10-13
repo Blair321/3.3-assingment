@@ -42,9 +42,28 @@ console.log(supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
-let positive = []
+let positives = []
 let negatives = []
 let zeroes = []
+for (let index = 0; index < supplyChanges.length; index++) {
+  const number = supplyChanges[index];
+  console.log(`Value of supplyChange at postion ${index} is ${number}`);
+  if(number > 0 ) {positives.push(number)
+    // push positive number to positive array
+  }
+if(number < 0 ){
+  negatives.push(number)
+}
+  // push negative to negative array
+if( number === 0 ){
+  zeroes.push(number)
+}
+  // push to zero array
+}
+console.log(zeroes);
+console.log(positives);
+console.log(negatives);
+
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
 //    'negatives', and 'zeroes', create three new arrays named 'stretchPositives',
